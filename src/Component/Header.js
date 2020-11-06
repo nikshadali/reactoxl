@@ -4,6 +4,8 @@ import SearchIcon from '@material-ui/icons/Search';
 import Login from './Login';
 
 import {Link} from 'react-router-dom';
+import Faceimg from './Faceimg';
+
 class Header extends React.Component{
   
  
@@ -39,8 +41,8 @@ class Header extends React.Component{
         </button>
         </div>
         <div className="col-md-3 navlink">
-         
-          <Link to ='/Login' className="link-login" data-toggle="modal" data-target="#myModal">Login</Link>
+         <Faceimg/>
+        
           
           <button className = "btn-sell">+SELL</button>
         </div>
@@ -53,5 +55,8 @@ class Header extends React.Component{
         )
     }
 }
+
+ 
+
 
 export default Header;

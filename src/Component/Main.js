@@ -1,6 +1,6 @@
 
 import React from "react";
-import Card from "./Card";
+
 import Cardno from './Cardno';
 
 class Main extends React.Component{

@@ -118,7 +118,7 @@ bg-white{
 }
 .card{
     width: 250px;
-    height:300px;
+    height:220px;
     border:1px solid #f0f0f0;
     margin-top:40px;
     margin-left:40px;
@@ -213,4 +213,16 @@ ul{
 }
 .modal-content{
     width:80% !important;
+}
+.card-body{
+    border-left: 5px solid rgb(255, 206, 50);;
+}
+.card img{
+    width:100px;
+    height: 100px;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+.faceimg{
+    border-radius: 50%;
 }

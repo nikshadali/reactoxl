@@ -1,10 +1,12 @@
 import React from 'react';
 import Btn from './Btn';
-import Home from './Home';
+import {connect} from 'react-redux';
+import {facebook_login} from '../store/action';
 
 
 class Login extends React.Component{
     render(){
+      console.log("facebook===>", this.props)
         const nik = require("./img/nik.jpg")
         return(
             <>
@@ -22,7 +24,7 @@ class Login extends React.Component{
              </div>
              <div className="modal-body head-sec">
                   <Btn class=" combine btn-block" name="Countinu with phone"></Btn>
-                  <Btn class="facebook combine btn-block" name="Countinu with facebook"></Btn>
+                  <Btn class="facebook combine btn-block" name="Countinu with facebook" Click ={() => this.props.facebook_login()}></Btn>
                   <Btn class="facebook combine btn-block" name="Countinu with google"></Btn>
                   <Btn class="facebook combine btn-block" name="Countinu with email"></Btn>
              </div>
@@ -37,5 +39,15 @@ class Login extends React.Component{
         )
     }
 }
+const mapStateToProps = (state) =>({
+  user:state.user
 
-export default Login;
+})
+  
+
+const mapDispatchToProps = (dispatch) =>({
+  facebook_login :() => dispatch(facebook_login()),
+
+})
+
+export default connect(mapStateToProps,mapDispatchToProps)(Login);

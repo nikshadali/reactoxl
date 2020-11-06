@@ -1,9 +1,9 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+
 import Header from './Header';
 import Navbar from './Navbar';
 import Headerimg from './Hearderimg'
-import Card from './Card';
+
 import GoogAdd from './GooglAdd';
 import Main from "./Main";
 import Carosuel from './Carosuel';

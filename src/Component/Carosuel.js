@@ -5,8 +5,7 @@ import Cardno from './Cardno';
 class Carosuel extends React.Component{
     render(){
         const led = require('./img/led.jpg')
-        const mobile = require('./img/mobile.jpg')
-        const samsung = require('./img/samsung.jpg')
+      
         return(
                 
             <>

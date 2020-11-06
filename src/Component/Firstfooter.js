@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 class Firstfooter extends React.Component{
     render(){
-        const web_app = require('./img/phone-app.png')
+        
         return(
             <div className="f-main-footer">
                 <div className="container">
